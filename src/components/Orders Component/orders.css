@@ -17,7 +17,7 @@
    flex: 12;
    justify-content: center;
    gap: auto;
-   
+
 
    background-color: #CE2829;
 }
@@ -42,17 +42,151 @@
 
 }
 
-.order-form-wrapper{
+.order-form-wrapper {
    flex: 88;
    padding: 24px;
    font-weight: 600;
    overflow-y: auto;
 }
 
-.form-wrapper{
+.form-wrapper {
    width: 43.6%;
    height: auto;
    align-items: flex-start;
+   gap: 60px;
+}
+
+.main-title {
+   font-size: 32px;
+   font-family: 'Barlow', sans-serif;
+   font-weight: 700;
+}
+
+.selection-size-dough{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+
+   width: 60%;
+}
+
+.size {
+   display: flex;
+   flex-direction: column;
+   gap: 18px;
+}
+
+.size-title {
+   font-size: 28px;
+   font-family: 'Barlow', sans-serif;
+
+}
+
+.radio-buttons{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.form-check {
+   display: flex;
+   align-items: center;
+   gap: 16px;
+
+   font-size: 22px;
+   font-weight: 400;
+}
+
+#dropdown-basic-button {
+   background-color: #ffffff;
+   color: black;
+   font-family: 'Barlow', sans-serif;
+   font-size: 18px;
+   font-weight: 600;
+   border: 1px solid black;
+}
+
+.dropdown-item {
+   font-weight: 600 !important;
+}
+
+.selection-extras {
+   width: 60%;
+}
+
+.extras-wrapper {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 10px;
+   column-gap: 110px;
+   grid-auto-rows: minmax(100px, auto);
+}
+
+.extras-explanation {
+   font-size: 18px;
+   color: #00000060;
+}
+
+.order-checkout {
+   width: 100%;
+
+}
+
+textarea.form-control {
+   width: 100%;
+   resize: none;
+   font-weight: 600;
+   font-size: 20px;
+   font-family: 'Barlow', sans-serif;
+}
+
+.checkout-wrapper {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+
+}
+
+.specamount {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+}
+
+.amount {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+
+.specbutton {
+   width: 56px;
+   height: 60px;
+   background-color: #FDC913;
+   border-radius: 8px;
+}
+
+.dec {
+   border-top-right-radius: 0;
+   border-bottom-right-radius: 0;
+}
+
+.inc {
+   border-top-left-radius: 0;
+   border-bottom-left-radius: 0;
+
+}
+
+.number {
+   height: 60px;
+   width: 60px;
+   border-top: 2px solid #D9D9D9;
+   border-bottom: 2px solid #D9D9D9;
+}
+
+.checkout-detail {
+
 }
 
 h1 {
@@ -60,4 +194,3 @@ h1 {
    font-size: 40px;
    color: #FAF7F2;
 }
-
