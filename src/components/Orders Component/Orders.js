@@ -31,13 +31,22 @@ const Orders = () => {
   return (
     <div class="orders-wrapper flex-center-column">
       <div class="header flex-center-column">
-        <h1 >Teknolojik Yemekler</h1>
+        <h1 class="header-title">Teknolojik Yemekler</h1>
         <p class="links"><a href="/">Ana Sayfa</a> - Seçenekler - <span>Sipariş Oluştur</span></p>
       </div>
       <div class="order-form-wrapper flex-center-column">
         <div class="form-wrapper flex-center-column">
           <p class="main-title">Position Absolute Acı Pizza</p>
-          <div class="order-details">as</div>
+          <div class="order-details">
+            <div class="detail-wrapper">
+              <p class="price">85.50₺</p>
+              <div class="rating">
+                <p>4.9</p>
+                <p>(200)</p>
+              </div>
+            </div>
+            <div class="product-detail">Frontent Dev olarak hala position:absolute kullanıyorsan bu çok acı pizza tam sana göre. Pizza, domates, peynir ve genellikle çeşitli diğer malzemelerle kaplanmış, daha sonra geleneksel olarak odun ateşinde bir fırında yüksek sıcaklıkta pişirilen, genellikle yuvarlak, düzleştirilmiş mayalı buğday bazlı hamurdan oluşan İtalyan kökenli lezzetli bir yemektir. . Küçük bir pizzaya bazen pizzetta denir.</div>
+          </div>
           <div class="selection-size-dough">
             <div class="size">
               <p class="size-title">Boyut Seç <span style={{ color: "#CE2829" }}>*</span></p>
@@ -92,7 +101,6 @@ const Orders = () => {
                     id={`${type}`}
                     label={` ${type}`}
                   />
-
                 </div>
               ))}
             </Form>
@@ -104,7 +112,7 @@ const Orders = () => {
                 <Form.Control as="textarea" rows={3} placeholder="Siparişine eklemek istediğin bir not var mı?" />
               </Form.Group>
             </div>
-            <hr style={{ marginTop: "45px" }} />
+            <hr style={{ margin: "45px 0" }} />
             <div class="checkout-wrapper">
               <div class="amount">
                 <div class="specbutton dec specamount">-</div>
@@ -112,8 +120,18 @@ const Orders = () => {
                 <div class="specbutton inc specamount">+</div>
               </div>
               <div class="checkout-detail">
-                <p class="size-title">Sipariş Toplamı</p>
-
+                <div class="total-wrapper">
+                  <p class="total-title">Sipariş Toplamı</p>
+                  <div class="total">
+                    <p class="total-title-small">Seçimler</p>
+                    <p class="total-title-small">25.00₺</p>
+                  </div>
+                  <div class="total">
+                    <p class="total-money">Toplam</p>
+                    <p class="total-money ">110.50₺</p>
+                  </div>
+                </div>
+                <button class="give-order-button">Sipariş Ver</button>
               </div>
             </div>
           </div>
