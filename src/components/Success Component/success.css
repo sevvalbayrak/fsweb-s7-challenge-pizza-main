@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap");
+
+.flex-center-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.success-wrapper {
+  position: relative;
+  height: 100%;
+  background-color: #ce2829;
+}
+
+.successContent-wrapper {
+  padding: 12px 48px;
+  height: 100%;
+  width: 100%;
+  gap: 80px;
+  margin: auto;
+}
+.slogan {
+  font-family: "Barlow", sans-serif;
+  font-size: 40px;
+  color: #faf7f2;
+  text-align: center;
+  padding: 142px 48px;
+}
+
+.successTitle {
+  font-family: "Barlow", sans-serif;
+  font-weight: 300;
+  font-size: 48px;
+  text-align: center;
+  color: #faf7f2;
+}
